@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: quicksand;
+}
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+
+  /* pendukung */
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: right;
+}
+.flex-container-row {
+  display: flex;
+}
+.button {
+  flex-basis: 25%;
+
+  /* pendukung */
+  font-size: 1.5em;
+  text-align: center;
+  padding: 40px;
+  border: 1px solid black;
+  background: -webkit-linear-gradient(top, #fffcfc, rgb(35, 207, 107));
+  cursor: pointer;
+}
+.sama {
+  flex-basis: 50%;
+}
+.display {
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: rgb(10, 99, 110);
+}
+.operator,
+.negative,
+.equals {
+  font-weight: 400;
+  background: rgba(255, 255, 0, 0.61);
+}
+.card {
+  box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 20px;
+}
+.button:hover {
+  font-weight: bold;
+  background: rgb(13, 161, 75);
+  color: white;
+}
+.operator:hover,
+.negative:hover,
+.equals:hover {
+  font-weight: 400;
+  background: rgba(255, 255, 0, 0.829);
+}
+.history {
+  width: 80%;
+  margin: 30px auto 0 auto;
+  overflow: scroll;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 2px solid #eee;
+}
+th,
+td {
+  padding: 16px;
+  text-align: center;
+}
+th {
+  background-color: rgb(240, 117, 17);
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: yellowgreen;
+}
+@media screen and (max-width: 409px) {
+  .button {
+    padding: 10px;
+  }
+  .history {
+    width: 100%;
+  }
+}
